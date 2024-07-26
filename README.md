@@ -30,7 +30,7 @@
 
 ## SOURCE CODE
 
-- To start: Clone project : git clone [git](https://github.com/bichloan1704/Practice_html_css)
+- To start: Clone project : git clone [git](https://github.com/bichloan1704/Practice_html_css_2)
 
 ## HOW TO RUN
 
