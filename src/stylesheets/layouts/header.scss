@@ -12,24 +12,6 @@
     display: flex;
     justify-content: space-evenly;
 }
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-Medium.ttf') format('truetype');
-    font-weight: medium;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 .header p{
     font-family: 'Inter',sans-serif;
     font-weight: bold;
@@ -55,7 +37,6 @@ ul{
     width: 120px;
     height: 30px;
     background: #B9F2A1;
-    font-size: 20px;
     font-family: 'Inter',sans-serif;
     font-size: 20px;
     border-radius: 15px;
