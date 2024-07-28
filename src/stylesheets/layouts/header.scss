@@ -1,16 +1,15 @@
+@use '../abstracts' as *;
+
 *{
     margin: 0;
     padding: 0;
-}
-.container{
-    background: linear-gradient(284.05deg, #073340 3.71%, #659365 119.58%);
-}
+}   
 .header{
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-top: 55px;
+    padding-top: 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .header p{
     font-family: 'Inter',sans-serif;
@@ -18,14 +17,12 @@
     font-size: 36px;
     color: white;
 }
-ul{
+.header-middle{
+    width: 45%;
     display: flex;
     justify-content: space-between;
     list-style: none;
     font-size: 22px;
-}
-.header-middle{
-    width: 40%;
 }
 .header-middle a{
     text-decoration: none;
@@ -36,10 +33,9 @@ ul{
 .header-right b{
     width: 120px;
     height: 30px;
-    background: #B9F2A1;
-    font-family: 'Inter',sans-serif;
     font-size: 20px;
-    border-radius: 15px;
-    padding: 15px 25px;
+    @include greenbutton;
+    border-radius: 7px;
+    padding: 11px 16px;
 }
 

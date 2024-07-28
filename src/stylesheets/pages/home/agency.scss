@@ -1,0 +1,54 @@
+@use "../../abstracts/" as *;
+
+.agency{
+    width: 100%;
+    margin: auto;
+    padding-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.agency-left{
+    width: 45%;
+    height: 40rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.agency-left h2{
+    width: 100%;
+    font-family: 'Inter',sans-serif;
+    @include font(58px, bold);
+    color: white;
+    line-height: 6rem;
+}
+.agency-left b{
+    @include gradient;
+}
+.agency-left p{
+    font-family: 'Inter';
+    @include font(18px, normal);
+    color: #E8E8E8;
+    line-height: 2rem;
+}
+.butt{
+    display: flex;
+    gap: 10px;
+}
+.butt-left, .butt-right{
+    @include greenbutton;
+    width: 187px;
+    height: 55px;
+    font-family: 'Inter',sans-serif;
+    font-weight: bold;
+}
+.butt-right{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #B9F2A1;
+    color: white;
+}
+.agency img{
+    width: 45%;
+    height: 50rem;
+}

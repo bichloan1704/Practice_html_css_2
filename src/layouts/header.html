@@ -2,13 +2,13 @@
         <div class="header">
             <p>DIGITREND</p>
             <div class="header-middle">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About US</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Porfolio</a></li>
-                </ul>
+                <include 
+                    src="./components/menus.html"
+                    locals='{
+                    "menus": "[`Home`, `About US`, `Service`, `Prcing`, `Portfolio`]"
+                    }'
+                >
+                </include>
             </div>
             <div class="header-right">
                 <b>Contact US</b>

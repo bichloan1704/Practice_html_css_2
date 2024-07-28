@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/layouts/header.html",
-    "start": "parcel ./src/pages/index.html"
+    "dev": "parcel ./src/pages/index.html"
   },
   "author": "",
   "license": "ISC",

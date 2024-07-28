@@ -16,19 +16,24 @@
   @content;
 }
 
-@mixin gradient(){
-  background: linear-gradient(90deg, #6F48FC 21.63%, #D07EF7 60.55%, #56C6E7 79.11%);
-  background-clip: text;
-  color: transparent;
-}
-
-@mixin blackbutton{
-  background-color: #252739;
-  color: white;
-  border: 4px solid #454545ce;
-  padding: 15px 35px;
+@mixin greenbutton{
+  background-color: #B9F2A1;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 25px;
+  text-align: center;
+  align-content: center;
+  font-family: 'Inter',sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @mixin shadow{
   box-shadow: 10px 20px 50px 10px #0000001A;
+}
+@mixin gradient(){
+  background: #B9F2A1;
+  background-clip: text;
+  color: transparent;
 }
