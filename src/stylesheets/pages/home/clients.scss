@@ -9,5 +9,9 @@
 }
 .clients-top h2{
     font-family: 'Inter-Blod';
-    @include font(48px, bolder);
+    @include font(48px, bold);
+}
+.clients-top p{
+    font-family: 'Inter-Regular';
+    @include font(18px, normal);
 }
