@@ -1,10 +1,13 @@
 @use '../abstracts' as *;
 @forward 'footer';
 @forward 'header';
+
 .container{
-    background: linear-gradient(284.05deg, #073340 3.71%, #659365 119.58%);
+    background-image: url(../assets/images/backgr_img.png);
+    background-size: 100% 76.6rem;
+    background-repeat: no-repeat;
 }
 .body-content{
     width: 100%;
-    padding: 0 14rem;
+    padding: 0 14rem;   
 }

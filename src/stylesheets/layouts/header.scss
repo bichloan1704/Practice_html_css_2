@@ -12,30 +12,19 @@
     justify-content: space-between;
 }
 .header p{
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter-Bold',sans-serif;
     font-weight: bold;
     font-size: 36px;
     color: white;
 }
-.header-middle{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 22px;
-}
-.header-middle a{
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-weight: medium;
-    color: white;
-}
+
 .header-right b{
-    width: 120px;
-    height: 30px;
-    font-size: 20px;
+    width: 16.1rem;
+    height: 6rem;
+    font-family: 'Inter-Bold';
+    @include font(22px, bold);
     @include greenbutton;
-    border-radius: 7px;
-    padding: 11px 16px;
+    border-radius: 18px;
+    padding: 18px 25px;
 }
 
