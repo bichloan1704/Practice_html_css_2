@@ -1,45 +1,30 @@
+@use '../abstracts' as *;
+
 *{
     margin: 0;
     padding: 0;
-}
-.container{
-    background: linear-gradient(284.05deg, #073340 3.71%, #659365 119.58%);
-}
+}   
 .header{
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-top: 55px;
+    padding-top: 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .header p{
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter-Bold',sans-serif;
     font-weight: bold;
     font-size: 36px;
     color: white;
 }
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 22px;
-}
-.header-middle{
-    width: 40%;
-}
-.header-middle a{
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-weight: medium;
-    color: white;
-}
+
 .header-right b{
-    width: 120px;
-    height: 30px;
-    background: #B9F2A1;
-    font-family: 'Inter',sans-serif;
-    font-size: 20px;
-    border-radius: 15px;
-    padding: 15px 25px;
+    width: 16.1rem;
+    height: 6rem;
+    font-family: 'Inter-Bold';
+    @include font(22px, bold);
+    @include greenbutton;
+    border-radius: 18px;
+    padding: 18px 25px;
 }
 

@@ -1,0 +1,23 @@
+@use "../../abstracts/" as *;
+
+.clients{
+    margin-top: 15rem;
+}
+.clients-top{
+    text-align: center;
+    align-content: center;
+}
+.clients-top h2{
+    font-family: 'Inter-Bold';
+    @include font(48px, bold);
+}
+.clients-top p{
+    @include lorem;
+    margin-top: 2rem;
+    line-height: 2.2rem;
+}
+.clients-bott{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem auto;
+}
