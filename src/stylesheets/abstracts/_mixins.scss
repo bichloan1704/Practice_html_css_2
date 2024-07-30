@@ -18,6 +18,8 @@
 
 @mixin greenbutton{
   background-color: #B9F2A1;
+  width: 18.7rem;
+  height: 6rem;
   color: black;
   border: none;
   border-radius: 10px;
@@ -35,4 +37,9 @@
   background: #B9F2A1;
   background-clip: text;
   color: transparent;
+}
+@mixin lorem{
+  font-family: 'Inter-Regular';
+  @include font(18px, normal);
+  color: #5D5A5A;
 }

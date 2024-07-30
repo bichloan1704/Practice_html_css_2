@@ -39,10 +39,10 @@
 }
 .butt-left, .butt-right{
     @include greenbutton;
-    width: 187px;
-    height: 55px;
-    font-family: 'Inter',sans-serif;
-    font-weight: bold;
+    width: 18.7rem;
+    height: 6rem;
+    font-family: 'Inter-SemiBold',sans-serif;
+    @include font(18px, normal);
 }
 .butt-right{
     background-color: rgba(0, 0, 0, 0);
