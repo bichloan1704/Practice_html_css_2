@@ -42,4 +42,9 @@
   font-family: 'Inter-Regular';
   @include font(18px, normal);
   color: #5D5A5A;
+  line-height: 2.2rem;
+}
+@mixin center{
+  text-align: center;
+  align-content: center;
 }
