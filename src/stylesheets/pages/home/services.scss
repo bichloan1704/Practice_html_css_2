@@ -63,5 +63,10 @@
 }
 .item:hover{
     border: 5px solid #659365;
-    
+    .arrow h5{
+        color: #659365;
+    }
+    .arrow img{
+        filter: brightness(0) saturate(100%) invert(53%) sepia(27%) saturate(482%) hue-rotate(71deg) brightness(95%) contrast(89%);
+    }
 }
