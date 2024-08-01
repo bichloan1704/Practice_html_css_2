@@ -1,20 +1,14 @@
 @use '../abstracts' as *;
 
-*{
-    margin: 0;
-    padding: 0;
-}   
 .header{
     width: 100%;
-    margin: auto;
     padding-top: 6rem;
     display: flex;
     justify-content: space-between;
 }
 .header p{
-    font-family: 'Inter-Bold',sans-serif;
-    font-weight: bold;
-    font-size: 36px;
+    font-family: 'Inter-Bold';
+    @include font(36px, bold);
     color: white;
 }
 
