@@ -84,121 +84,34 @@
     <div class="ourplan">
         <h2>Choose Our Plan</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum <br> purus velit ullamcorper.</p>
-    </div>
-    <div class="plan-box">
-        <div class="box1">
-            <h2>Free</h2> <br> <br>
-            <span class="under">
-                <h3>$0</h3>
-                <h6>/mo</h6>
-            </span>
-            <div class="bott-box">
-                <div class="list">
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>1 user request</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>1 design account</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Email support</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>10 deployment</p>
-                    </div>
-                </div>
-                <a href="">
-                    <div class="butt-plan"><p>Choose Plan</p></div>
-                </a>
-            </div>
-        </div>
-        <div class="box2">
-            <h2>Premium</h2> <br> <br>
-            <span class="under">
-                <h3>$55</h3>
-                <h6>/mo</h6>
-            </span>
-            <div class="bott-box">
-                <div class="list">
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>10 user request</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>1 design account</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>3 design account</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Email Support</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>100 deployment</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>24/7 Support</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Premium Support</p>
-                    </div>
-                </div>
-                <a href="">
-                    <div class="butt-plan"><p>Choose Plan</p></div>
-                </a>
-            </div>
-        </div>
-        <div class="box3">
-            <h2>Enterprise</h2> <br> <br>
-            <span class="under">
-                <h3>$105</h3>
-                <h6>/mo</h6>
-            </span>
-            <div class="bott-box">
-                <div class="list">
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Unlimited user request</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>3 to 50 design account</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Email support</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Unlimited deployment</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>24/7 Support</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Advanced security</p>
-                    </div>
-                    <div class="list-child">
-                        <img src="../assets/icons/tick.svg" alt="">
-                        <p>Invoice and billing</p>
-                    </div>
-                </div>
-                <a href="">
-                    <div class="butt-plan"><p>Choose Plan</p></div>
-                </a>
-            </div>
+        <div>
+            <include
+                src='./components/plan-card.html'
+                locals = '{
+                "title": "Free",
+                "price": "0",
+                "contents": "[`1 user request`,`1 design account`,`Email support`,`10 deployment`]"
+                }'
+            >
+            </include>
+            <include 
+                src='./components/plan-card.html'
+                locals = '{
+                "title": "Premium",
+                "price": "55",
+                "contents": "[`10 user request`,`3 design account`,`Email support`,`100 deployment`,`24/7 support`, `Premium Support`]"
+                }'
+            >
+            </include>
+            <include 
+                src='./components/plan-card.html'
+                locals = '{
+                "title": "Enterprise",
+                "price": "105",
+                "contents": "[`Unlimited user request`,`3 to 50 design account`,`Email support`,`Unlimited deployment`, `24/7 Support`, `Advanced security`, `Invoice and billing`]"
+                }'
+            >
+            </include>
         </div>
     </div>
 </div>

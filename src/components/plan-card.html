@@ -1,0 +1,12 @@
+<div class="plan-card">
+        <h2>{{ title }}</h2>
+        <h3>${{ price }}<span>/mo</span></h3>
+        <div>
+            <div>
+                <each loop="content in {{ contents }}">
+                    <div><img src="../assets/icons/tick.svg" alt=""> {{ content }}</div>
+                </each>
+            </div>
+            <button>Choose Plan</button>
+        </div>
+</div>
