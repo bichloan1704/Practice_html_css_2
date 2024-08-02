@@ -48,3 +48,8 @@
   text-align: center;
   align-content: center;
 }
+@mixin flex-element($justify: space-between, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+}
