@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.contact-items{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.contact-items p{
+    font-family: 'Roboto-Bold';
+    @include font(1.8rem,normal);
+    color: white;
+}
