@@ -220,8 +220,8 @@
     <div class="form">
         <div class="input-left">
             <div class="name">
-                <input type="text" name="" placeholder="First name">
-                <input type="text" name="" placeholder="Last name">
+                <input class="input-child" type="text" name="" placeholder="First name">
+                <input class="input-child" type="text" name="" placeholder="Last name">
             </div>
             <input type="text" name="" placeholder="Email">
             <input type="text" name="" placeholder="Message">
@@ -229,7 +229,7 @@
         </div>
         <div class="box-right">
             <include
-                src='./components/contact-items'
+                src='./components/contact-items.html'
                 locals='{
                     "icon" : "target_ic.svg",
                     "text" : "lorum ispym locationdado supuerm"
@@ -237,29 +237,36 @@
             >
             </include>
             <include
-                src='./components/contact-items'
+                src='./components/contact-items.html'
                 locals='{
                     "icon" : "mail_ic.svg",
-                    "text" : "lorum ispym locationdado supuerm"
+                    "text" : "loreum.ispum@gmail,+.com"
                 }'
             >
             </include>
             <include
-                src='./components/contact-items'
+                src='./components/contact-items.html'
                 locals='{
                     "icon" : "mobilephone_ic.svg",
-                    "text" : "lorum ispym locationdado supuerm"
+                    "text" : "+98564155 54646"
                 }'
             >
             </include>
             <include
-                src='./components/contact-items'
+                src='./components/contact-items.html'
                 locals='{
                     "icon" : "telephone_ic.svg",
-                    "text" : "lorum ispym locationdado supuerm"
+                    "text" : "+98564155 54646"
                 }'
             >
             </include>
         </div>
     </div>
 </div>
+   <!-- <form class="form-input">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="reset">Contact US</button>
+        </form> -->
