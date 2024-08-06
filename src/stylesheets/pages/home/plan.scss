@@ -1,0 +1,26 @@
+@use "../../abstracts/" as *;
+
+.plan{
+    background: #B9F2A159;
+    height: fit-content;
+    padding: 5rem 10rem;
+}
+.ourplan{
+    @include center;
+}
+.ourplan h2{
+    font-family: 'Inter-Bold';
+    @include font(48px, bold);
+}
+.ourplan p{
+    @include lorem;
+    line-height: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+.ourplan > div{
+    width: 78%;
+    display: flex;
+    margin: auto;
+}
+

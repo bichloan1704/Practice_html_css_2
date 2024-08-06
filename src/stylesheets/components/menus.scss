@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.header-middle{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 22px;
+}
+.header-middle a{
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-weight: medium;
+    color: white;
+}

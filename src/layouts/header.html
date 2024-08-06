@@ -1,38 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="./header.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <p>DIGITREND</p>
-            <div class="header-middle">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About US</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Porfolio</a></li>
-                </ul>
-            </div>
-            <div class="header-right">
-                <b>Contact US</b>
-            </div>
-            <div class="agency">
-                <div class="agency-left">
-                    <h2>Your Trusted Digital Agency Partner</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
-                    <div class="button">
-                    <div class="butt-left">Get Started</div>
-                    <div class="butt-right">Explore More</div>
-                </div>
-            </div>
+<div class="body-content">
+    <div class="header">
+        <p>DIGITREND</p>
+        <div class="header-middle">
+            <include 
+                src="./components/menus.html"
+                locals='{
+                "menus": "[`Home`, `About US`, `Service`, `Prcing`, `Portfolio`]"
+                }'
+            >
+            </include>
         </div>
+        <div class="header-right">
+           <a href=""><b>Contact US</b></a> 
         </div>
     </div>
-</body>
-</html>
+</div>
+    
+

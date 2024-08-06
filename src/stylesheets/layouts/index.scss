@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+@forward 'footer';
+@forward 'header';
+
+.container{
+    background-image: url(../assets/images/backgr_img.png);
+    background-size: 100% 76.6rem;
+    background-repeat: no-repeat;
+}
+.body-content, .digital, .plan, .contact{
+    width: 100%;
+    padding: 0 14rem;   
+}

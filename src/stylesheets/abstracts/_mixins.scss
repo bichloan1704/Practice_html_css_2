@@ -1,0 +1,55 @@
+@mixin font($font-size, $font-weight: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin center-element($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin between() {
+  display: flex;
+  justify-content: space-between;
+  @content;
+}
+
+@mixin greenbutton{
+  background-color: #B9F2A1;
+  width: 18.7rem;
+  height: 6rem;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 25px;
+  text-align: center;
+  align-content: center;
+  font-family: 'Inter',sans-serif;
+  @include font(18px, bold);
+}
+
+@mixin shadow{
+  box-shadow: 10px 20px 50px 10px #0000001A;
+}
+@mixin gradient(){
+  background: #B9F2A1;
+  background-clip: text;
+  color: transparent;
+}
+@mixin lorem{
+  font-family: 'Inter-Regular';
+  @include font(18px, normal);
+  color: #5D5A5A;
+  line-height: 2.2rem;
+}
+@mixin center{
+  text-align: center;
+  align-content: center;
+}
+@mixin flex-element($justify: space-between, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+}
