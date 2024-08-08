@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.footer{
+    width: 100%;
+    background-color: #131313;
+}
+.footer-wrapper{
+    width: 80%;
+    padding: 6rem 10rem;
+    color: white;
+    display: flex;
+    gap: 20rem;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    line-height: 2.2rem;
+}
+.footer-left h2{
+    font-family: 'Inter-Bold';
+    @include font(36px, normal);
+}
+.footer-left p{
+    font-family: 'Inter-Regular';
+    @include font(18px, normal);
+}
+.footer-left ul{
+    display: flex;
+    gap: 3.5rem;
+}
+.footer-left li{
+    color: white;
+}
+.footer-right{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-right div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-right h3 {
+    font-family: 'Inter-Bold';
+    @include font(24px, normal);
+}
+.footer-right a{
+    font-family: 'Inter-Bold';
+    @include font(16px, normal);
+    color: white;
+}
