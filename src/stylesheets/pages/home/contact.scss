@@ -30,21 +30,24 @@
     display: flex;
     justify-content: space-between;
 }
-.input-left input{
+.input-left input, .input-left textarea{
     background: linear-gradient(rgb(231, 250, 222),rgb(231, 250, 222)) padding-box,
     linear-gradient(180deg, #659365 0%, #184447 100%) border-box;
     padding: 1.3rem 1.8rem;
     border-radius: 8.65rem;
 }
-.name > input, .input-left > input:nth-child(2), .input-left > input:nth-child(3)
+.name > input, .input-left > input:nth-child(2), .input-left textarea
 {
     border: 3px solid transparent;
     font-family: 'Roboto-Bold';
     @include font(1.8rem,normal);
+    color: #7A7A7A;
 }
-.input-left > input:nth-child(3){
+.input-left textarea{
     height: 18rem;
     border-radius: 2rem;
+    outline: none;
+    resize: none;
 }
 .name > input{
     width: 45%;

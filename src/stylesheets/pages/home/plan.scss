@@ -4,6 +4,9 @@
     background: #B9F2A159;
     height: fit-content;
     padding: 5rem 10rem;
+    @include md{
+        padding: 5rem 2rem;
+    }
 }
 .ourplan{
     @include center;
@@ -11,16 +14,28 @@
 .ourplan h2{
     font-family: 'Inter-Bold';
     @include font(48px, bold);
+    @include md{
+        font-size: 36px;
+    }
 }
 .ourplan p{
     @include lorem;
     line-height: 2.2rem;
-    margin-top: 2rem;
-    margin-bottom: 12rem;
+    margin: 2rem 0 12rem 0;
+    @include md{
+        width: 100%;
+        margin: 3rem 0;
+        font-size: 14px;
+    }
 }
 .ourplan > div{
-    width: 78%;
+    width: fit-content;
     display: flex;
     margin: auto;
+    @include md{
+        height: fit-content;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+    }
 }
 
