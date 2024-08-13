@@ -41,6 +41,7 @@
     border: 3px solid transparent;
     font-family: 'Roboto-Bold';
     @include font(1.8rem,normal);
+    color: #7A7A7A;
 }
 .input-left textarea{
     height: 18rem;

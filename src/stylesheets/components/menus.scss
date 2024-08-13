@@ -6,10 +6,20 @@
     justify-content: space-between;
     list-style: none;
     font-size: 22px;
+    @include lg{
+        font-size: 18px;
+    }
+    @include sm{
+        display: none;
+    }
+   
 }
 .header-middle a{
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter-Medium';
     font-weight: medium;
     color: white;
+}
+.header-middle a:hover{
+    color: #B9F2A1;
+;
 }

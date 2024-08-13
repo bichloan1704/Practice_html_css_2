@@ -6,8 +6,20 @@
     background-image: url(../assets/images/backgr_img.png);
     background-size: 100% 76.6rem;
     background-repeat: no-repeat;
+    @include md{
+       background-size: 100% 100rem;
+    }
+    @include xs{
+        background-size: 100% 90rem;
+    }
 }
 .body-content, .digital, .plan, .contact{
     width: 100%;
-    padding: 0 14rem;   
+    padding: 0 14rem;  
+    @include lg{
+        padding: 0 6rem;
+    } 
+    @include md{
+        padding: 0 2rem;
+    }
 }
