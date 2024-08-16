@@ -1,12 +1,17 @@
 @use '../abstracts' as *;
 
-.portfolio > div:nth-child(2){
-    display: grid;
-    grid-template-areas: 
-    "a b d d e f"
-    "a c d d g g"
-    "j j i h g g"
-    ;
+.portfolio-card:nth-child(1){
+    grid-row: span 2;
+    grid-column: span 1;
+}
+.portfolio-card:nth-child(10), .portfolio-card:nth-child(4){
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.portfolio-card:nth-child(7){
+    grid-column: span 2;
+    grid-row: span 1;
+
 }
 .portfolio-card > div{
     display: none;
@@ -15,36 +20,7 @@
     width: 100%;
     height: 100%;
 }
-.portfolio-card:nth-child(1){
-    grid-area: a;
-}
-.portfolio-card:nth-child(2){
-    grid-area: b;
-}
-.portfolio-card:nth-child(3){
-    grid-area: c;
-}
-.portfolio-card:nth-child(4){
-    grid-area: d;
-}
-.portfolio-card:nth-child(5){
-    grid-area: e;
-}
-.portfolio-card:nth-child(6){
-    grid-area: f;
-}
-.portfolio-card:nth-child(7){
-    grid-area: g;
-}
-.portfolio-card:nth-child(8){
-    grid-area: h;
-}
-.portfolio-card:nth-child(9){
-    grid-area: i;
-}
-.portfolio-card:nth-child(10){
-    grid-area: j;
-}
+
 .portfolio-card{
     position: relative;
 }

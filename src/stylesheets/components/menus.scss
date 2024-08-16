@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .header-middle{
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -9,10 +9,9 @@
     @include lg{
         font-size: 18px;
     }
-    @include sm{
+    @include md{
         display: none;
     }
-   
 }
 .header-middle a{
     font-family: 'Inter-Medium';
