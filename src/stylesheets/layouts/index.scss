@@ -11,17 +11,12 @@
 }
 @include md{
     .first-image{
-        height: 90rem;
+        height: fit-content;
         border-radius: 0 0 0 9rem;
         clip-path: polygon(100.1% 0%, 100.1% 93%, 20.1% 100.3%, 0% 100.3%, 0% 0%);
     }
 }
-@include sm{
-    .first-image{
-        height: 110rem;
-    }
-    
-}
+
 .body-content, .digital, .plan, .contact{
     width: 100%;
     padding: 0 14rem;  
