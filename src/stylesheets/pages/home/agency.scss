@@ -2,31 +2,34 @@
 
 .agency{
     width: 100%;
-    height: 70%;
-    margin: auto;
+    padding-bottom: 20%;
     padding-top: 7rem;
     display: flex;
     justify-content: space-between;
+    @include lg{
+        gap: 3rem;
+    }
     @include md{
         flex-direction: column;
         gap: 4rem;
     }
+    @include xs{
+        gap: 0;
+    }
+
 }
 .agency-left{
     width: 47%;
-    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
      @include lg{
         width: 60%;
-        height: 60%;
     }
     @include md{
         width: 100%;
         padding: 0;
     }
-   
 }
 .agency-left h2{
     width: 100%;
@@ -64,7 +67,6 @@
     @include greenbutton;
 }
 .butt-right, .butt-left{
-    // background-color: rgba(0, 0, 0, 0);
     border: 2px solid #B9F2A1;
     color: white;
     width: 18.7rem;
@@ -75,14 +77,9 @@
     @include font(18px, normal);
 }
 .agency img{
-    width: 45%;
-    height: 45rem;
+    // width: 45%;
     @include md{
         margin: auto;
-    }
-    @include sm{
-        width: 80%;
-        height: 50rem;
     }
 }
 .butt-2{

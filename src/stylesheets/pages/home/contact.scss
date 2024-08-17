@@ -3,28 +3,47 @@
 .contact{
     margin-top: 5rem;
     background-color: #B9F2A159;
-    padding: 5rem 10rem;
-    padding-bottom: 10rem;
+    padding: 7rem 10rem;
+    @include lg{
+        padding: 7rem 5rem;
+    }
+    @include md{
+        padding: 5rem 2rem;
+    }
 }
 .contact h2{
     font-family: 'Inter-Bold';
-    @include font(48px, bold);
+    font-size: 48px;
     @include center;
     margin-bottom: 10rem;
+    @include md{
+        display: none;
+    }
 }
 .form{
-    width: 80%;
-    margin: auto;
+    margin: 0 15%;
     display: flex;
     justify-content: space-between;
+    gap: 6rem;
+    @include lg{
+        margin: 0 2%;
+    }
+    @include md{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
 }
 .input-left{
-    width: 40%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: auto 0;
+    @include md{
+        order: 2;
+        margin: 0 auto;
+    }
+
+    
 }
 .name{
     display: flex;
@@ -56,9 +75,19 @@
     @include greenbutton;
     margin: auto;
 }
+.box-right h6{
+        display: none;
+        font-family: 'Inter-Bold';
+        font-size: 36px;
+        @include center;
+        color: white;
+        @include md{
+            height: fit-content;
+            display: inline;
+
+        }
+}
 .box-right{
-    width: 38%;
-    height: 48.5rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -67,5 +96,13 @@
     background: linear-gradient(90deg, #164246 0%, #629064 100%);
     padding: 6rem 5rem;
     border-radius: 7px;
-
+    @include md{
+        order: 1;
+        margin: auto;
+        padding: 8rem;
+        gap: 6rem;
+    }
+    @include xs{
+        padding: 6rem 2rem;
+    }
 }

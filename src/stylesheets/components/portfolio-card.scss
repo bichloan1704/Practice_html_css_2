@@ -4,11 +4,12 @@
     grid-row: span 2;
     grid-column: span 1;
 }
-.portfolio-card:nth-child(10), .portfolio-card:nth-child(4){
+.portfolio-card:nth-child(7), .portfolio-card:nth-child(3){
     grid-row: span 2;
     grid-column: span 2;
+
 }
-.portfolio-card:nth-child(7){
+.portfolio-card:nth-child(8){
     grid-column: span 2;
     grid-row: span 1;
 
@@ -16,18 +17,31 @@
 .portfolio-card > div{
     display: none;
 }
-.portfolio-card > img {
+.portfolio-card .img {
     width: 100%;
     height: 100%;
+}
+@include md{
+    .portfolio-card:nth-last-child(-n+5){
+        display: none;
+    }
 }
 
 .portfolio-card{
     position: relative;
+    @include md{
+        width: 85%;
+        height: 40rem;
+        margin: auto;
+    }
+    @include sm{
+        height: 30rem;
+    }
 }
 .portfolio-card > div{
     width: 100%;
     height: 100%;
-    padding: 2.5rem;
+    padding: 5%;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -40,10 +54,12 @@
     align-content: center;
 }
 .portfolio-card > div > div{
-    width: 45%;
+    width: 65%;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
+  
 }
+
 .portfolio-card > div >img{
     position: absolute;
     bottom: 10%;
