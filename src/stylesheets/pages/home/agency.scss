@@ -78,7 +78,6 @@
     @include font(18px, normal);
 }
 .agency img{
-    // width: 45%;
     @include md{
         margin: auto;
     }
