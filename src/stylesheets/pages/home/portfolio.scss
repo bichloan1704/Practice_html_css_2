@@ -13,10 +13,17 @@
     @include font(48px, bold);
 }
 .our-lio p{
+    padding: 0 15%;
     @include lorem;
     line-height: 2.2rem;
     margin-top: 2rem;
     margin-bottom: 12rem;
+    @include md{
+        margin-bottom: 6rem;
+    }
+    @include sm{
+        padding: 0;
+    }
 }
 .portfolio > div:nth-child(2){
     display: grid;
