@@ -11,7 +11,7 @@
     display: none;
     width: 3rem;
     height: 3rem;
-    @include sm{
+    @include md{
         display: block;
     }
 }
