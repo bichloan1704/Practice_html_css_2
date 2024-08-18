@@ -13,9 +13,6 @@
         flex-direction: column;
         gap: 4rem;
     }
-    @include xs{
-        gap: 0;
-    }
 
 }
 .agency-left{

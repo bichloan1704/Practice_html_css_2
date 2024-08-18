@@ -29,13 +29,14 @@
 
 .portfolio-card{
     position: relative;
+    object-fit: cover;
     @include md{
         width: 85%;
-        height: 40rem;
+        height: 36rem;
         margin: auto;
     }
     @include sm{
-        height: 30rem;
+        height: 20rem;
     }
 }
 .portfolio-card > div{

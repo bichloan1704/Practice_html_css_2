@@ -9,10 +9,13 @@
     padding: 6rem 10rem;
     color: white;
     display: flex;
-    gap: 20rem;
+    justify-content: space-between;
+    gap: 6rem;
     @include lg{
         padding: 6rem 3rem;
-        gap: 7rem;
+    }
+    @include sm{
+        gap: 3rem;
     }
 }
 .footer-left{
