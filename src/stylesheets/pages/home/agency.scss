@@ -27,6 +27,7 @@
         width: 100%;
         padding: 0;
     }
+  
 }
 .agency-left h2{
     width: 100%;
@@ -37,6 +38,9 @@
     @include md{
         font-size: 37px;
         text-align: center;
+    }
+    @include sm{
+        line-height: 4.1rem;
     }
 }
 .agency-left b{

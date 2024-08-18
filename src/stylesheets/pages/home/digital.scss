@@ -21,6 +21,9 @@
     @include lg{
         font-size: 42px;
     }
+    @include sm{
+        line-height: 4.1rem;
+    }
 }
 .digital-left p{
     @include lorem;
