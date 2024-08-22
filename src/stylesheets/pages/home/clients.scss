@@ -8,7 +8,7 @@
 }
 .clients-top h2{
     font-family: 'Inter-Bold';
-    @include font(48px, bold);
+    font-size: 48px;
     margin-bottom: 2.5rem;
     @include md{
         font-size: 36px;
@@ -27,8 +27,7 @@
     }
 }
 .clients-bott{
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     margin: 8rem auto;
     @include md{
         width: 50%;

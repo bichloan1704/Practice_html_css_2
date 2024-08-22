@@ -13,7 +13,7 @@
 }
 .ourplan h2{
     font-family: 'Inter-Bold';
-    @include font(48px, bold);
+    font-size: 48px;
     @include lg{
         font-size: 36px;
     }

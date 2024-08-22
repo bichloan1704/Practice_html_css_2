@@ -29,9 +29,9 @@
 }
 .plan-card > div{
     height: 80%;
-    display: flex;
+    @include flex-element;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 .plan-card > div > div {
     display: flex;
@@ -44,20 +44,20 @@
 .plan-card h2{
     @include center;
     font-family: 'Poppins-Regular';
-    @include font(45px,normal);
+    font-size: 45px;
 }
 .plan-card span{
     font-family: 'Poppins-Regular';
-    @include font(20px, normal);
+    font-size: 20px;
     color: #999999;
 }
 .plan-card h3{
     font-family: 'Poppins-Medium';
-    @include font(37px, normal);
+    font-size: 37px;
 }
 .plan-card > div > div > div{
     font-family: 'Poppins-Regular';
-    @include font(20px, normal);
+    font-size: 20px;
     display: flex;
     text-align: left;
     gap: 2rem;

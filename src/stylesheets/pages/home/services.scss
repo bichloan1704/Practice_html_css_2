@@ -6,7 +6,7 @@
 }
 .services-top h2{
     font-family: 'Inter-Bold';
-    @include font(48px, bold);
+    font-size: 48px;
     @include md{
         font-size: 36px;
     }
@@ -22,8 +22,7 @@
 .services-bott{
     width: 95%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     @include md{
         flex-wrap: wrap;
         gap: 3rem;
@@ -64,21 +63,16 @@
     width: 75%;
     height: 40%;
     margin: auto;
-    display: flex;
+    @include flex-element;
     flex-direction: column;
-    justify-content: space-between;
     @include lg{
-        width: 80%;
-        height: 50%;
-    }
-    @include md{
         width: 80%;
         height: 50%;
     }
 }
 .explore h5{
     font-family: 'Inter-Bold';
-    @include font(16, bold);
+    font-size: 16px;
     color: #5D5A5A;
 }
 .arrow img{

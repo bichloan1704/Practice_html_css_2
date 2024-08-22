@@ -16,7 +16,7 @@
 }
 .digital-left h2{
     font-family: 'Inter-Bold';
-    @include font(48px, bold);
+    font-size: 48px;
     line-height: 5.9rem;
     @include lg{
         font-size: 42px;
@@ -37,9 +37,9 @@
 }
 .digital-left{
     width: 35%;
-    display: flex;
+    @include flex-element($justify: space-around);
     flex-direction: column;
-    justify-content: space-around;
+
     @include lg{
         width: 45%;
     }

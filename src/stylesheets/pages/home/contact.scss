@@ -22,8 +22,7 @@
 }
 .form{
     margin: 0 15%;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     gap: 6rem;
     @include lg{
         margin: 0 2%;
@@ -43,11 +42,9 @@
         margin: 0 auto;
     }
 
-    
 }
 .name{
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
 }
 .input-left input, .input-left textarea{
     background: linear-gradient(rgb(231, 250, 222),rgb(231, 250, 222)) padding-box,
@@ -59,7 +56,7 @@
 {
     border: 3px solid transparent;
     font-family: 'Roboto-Bold';
-    @include font(1.8rem,normal);
+    font-size: 18px;
     color: #7A7A7A;
 }
 .input-left textarea{
@@ -89,9 +86,8 @@
 }
 .box-right{
     align-items: center;
-    display: flex;
+    @include flex-element($justify: space-evenly);
     flex-direction: column;
-    justify-content: space-evenly;
     gap: 4rem;
     background: linear-gradient(90deg, #164246 0%, #629064 100%);
     padding: 6rem 5rem;

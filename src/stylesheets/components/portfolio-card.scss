@@ -70,7 +70,7 @@
 }
 .portfolio-card h4{
     font-family: "Inter-Bold";
-    @include font(24px, normal);
+    font-size: 24px;
     color: white;
     line-height: 29px;
     padding-bottom: 1rem;
@@ -78,7 +78,7 @@
 .portfolio-card p{
     @include lorem;
     color: #9D9C9C;
-    @include font(12px, normal);
+    font-size: 12px;
     line-height: 14.5px;
 }
 .portfolio-card:hover > div{

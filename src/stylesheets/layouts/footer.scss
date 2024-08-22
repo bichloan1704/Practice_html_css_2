@@ -8,8 +8,7 @@
     width: 100%;
     padding: 6rem 10rem;
     color: white;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     gap: 6rem;
     @include lg{
         padding: 6rem 3rem;
@@ -63,16 +62,14 @@
 }
 .footer-right{
     width: 60%;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     @include md{
         width: 75%;
     }
 }
 .footer-right div{
-    display: flex;
+    @include flex-element;
     flex-direction: column;
-    justify-content: space-between;
 }
 .footer-right h3 {
     font-family: 'Inter-Bold';

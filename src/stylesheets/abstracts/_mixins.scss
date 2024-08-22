@@ -3,19 +3,6 @@
   font-weight: $font-weight;
 }
 
-@mixin center-element($gap: 0) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: $gap;
-}
-
-@mixin between() {
-  display: flex;
-  justify-content: space-between;
-  @content;
-}
-
 @mixin greenbutton{
   background-color: #B9F2A1;
   width: 18.7rem;

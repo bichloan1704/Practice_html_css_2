@@ -4,8 +4,7 @@
     width: 100%;
     padding-bottom: 20%;
     padding-top: 7rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     @include lg{
         gap: 3rem;
     }
@@ -17,10 +16,9 @@
 }
 .agency-left{
     width: 47%;
-    display: flex;
+    @include flex-element($justify: space-around);
     flex-direction: column;
-    justify-content: space-around;
-     @include lg{
+    @include lg{
         width: 60%;
     }
     @include md{
@@ -31,8 +29,8 @@
 }
 .agency-left h2{
     width: 100%;
-    font-family: 'Inter-Bold',sans-serif;
-    @include font(54px, bold);
+    font-family: 'Inter-Bold';
+    font-size: 54px;
     color: white;
     line-height: 6rem;
     @include md{
@@ -48,7 +46,7 @@
 }
 .agency-left p{
     font-family: 'Inter-Regular';
-    @include font(18px, normal);
+    font-size: 18px;
     color: #E8E8E8;
     line-height: 2.5rem;
     @include md{
@@ -74,8 +72,8 @@
     height: 6rem;
     border-radius: 10px;
     @include center;
-    font-family: 'Inter-SemiBold',sans-serif;
-    @include font(18px, normal);
+    font-family: 'Inter-SemiBold';
+    font-size: 18px;
 }
 .agency img{
     @include md{

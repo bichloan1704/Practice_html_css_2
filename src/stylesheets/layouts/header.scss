@@ -3,8 +3,7 @@
 .header{
     width: 100%;
     padding-top: 6rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex-element;
     align-items: center;
 }
 .header img{
@@ -17,10 +16,10 @@
 }
 .header p{
     font-family: 'Inter-Bold';
-    @include font(36px, bold);
+    font-size: 36px;
     color: white;
     @include sm{
-        @include font(24px, bold);
+        font-size: 24px;
     }
 }
 .header-right{
